@@ -23,7 +23,7 @@ jobs:
 
       - name: Run ESLint Security Rules
         run: |
-          npx eslint , -f json -o eslint-report.json
+          npx eslint . -f json -o eslint-report.json
 
       - name: Upload ESLint Report
         uses: actions/upload-artifact@v4
